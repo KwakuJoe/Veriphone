@@ -14,17 +14,15 @@
 
     <!-- body -->
     <div class="w-full h-screen flex flex-row justify-center ">
-        <div class="w-full  px-5 py-5 flex lg:flex-row flex-col lg:items-start items-center gap-y-5 gap-x-10">
+        <div class="w-full  px-5 py-5 flex  flex-col  items-center gap-y-5 gap-x-10">
             <!-- left side text -->
             <div class="lg:w-1/2 w-full flex flex-col gap-3 gap-x-2 ">
                <!-- title -->
-                <h1 class="lg:text-4xl md:text-4xl text-3xl font-medium">Global Phone Number Verification.</h1>
+                <h1 class="lg:text-4xl md:text-4xl text-3xl font-medium text-center">Global Phone Number Verification.</h1>
                 <!-- Sub text -->
-                <p>
+                <p class="text-center">
                     Verify phone numbers worldwide with confidence using our powerful tool.
-                    Ensure accuracy and reliability in seconds. Our advanced tool helps you validate phone numbers, 
-                    detect errors, and verify their existence, making it a reliable solution for businesses, 
-                    security, and communication needs.
+                    Ensure accuracy and reliability in seconds.
                 </p>
 
                 <!-- <pre>{{ verifyStore.verified_number }}</pre> -->

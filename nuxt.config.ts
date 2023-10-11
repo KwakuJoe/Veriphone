@@ -6,6 +6,6 @@ export default defineNuxtConfig({
     }
   },
   devtools: { enabled: true },
-  modules: ['@nuxt/ui', 'nuxt-icon', '@nuxt/image', '@pinia/nuxt']
+  modules: ['@nuxt/ui', 'nuxt-icon', '@nuxt/image', '@pinia/nuxt', '@formkit/auto-animate/nuxt']
   
 })

@@ -11,6 +11,7 @@
             <UButton block size="lg" type="submit" :loading="isVerifying   "  color="black" label="Verify" class="mt-3" variant="solid" />
         </UForm>
      </div>
+     
 </template>
 
 <script lang="ts" setup>
