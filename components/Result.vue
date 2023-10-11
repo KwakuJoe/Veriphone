@@ -1,5 +1,14 @@
 <template>
-     <div v-if="verifyStore.verified_number.country_code" class="border-x border-b border-slate-300/20">
+    
+    <div v-if="verifyStore.api_error" class="border-x border-b border-slate-300/20 flex flex-col items-center justify-between px-4 py-4">
+        <Icon size="5em" class="text-red-500" name="carbon:ibm-cloud-bare-metal-servers-vpc" />
+        <p class="text-3xl font-medium font-mono">! Ooops, An error occured</p>
+        <p class="text-sm text-center text-gray-400">{{ verifyStore.api_error }}</p>
+        <UButton block size="lg" @click="retry"  color="black" label="Go back" class="mt-3" variant="solid" />
+
+    </div>
+
+     <div v-else-if="verifyStore.verified_number.country" class="border-x border-b border-slate-300/20 mb-5 ">
                     <div class="flex items-center justify-between px-4  border-slate-300/20 py-2 bg-slate-300/10">
                         <p class="text-sm font-medium">Result</p>
                      
@@ -85,6 +94,12 @@
 
 import {useVerifyStore} from '../stores/verify_store'
 const verifyStore = useVerifyStore()
+
+
+// retry button
+ function retry (){
+    verifyStore.api_error = ''
+}
 
 
 
