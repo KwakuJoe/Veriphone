@@ -4,7 +4,7 @@
     <nav>
         <div class="flex flex-row py-4 justify-between">
             <!-- Logo -->
-            <NuxtImg v-if="colorMode.value === 'dark' " sizes="200" src="/logos/dark.png" />
+            <NuxtImg v-if="colorMode.value === 'dark' " sizes="100" src="/logos/dark.png" />
             <NuxtImg v-else sizes="100" src="/logos/light.png" />
             <!-- toggle theme -->
             <ToggleThemeButton/>
